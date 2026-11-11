@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="uz"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kollej Neon — Onlayn testlar va guruhlar</title>
+<meta name="description" content="Kollej o'quvchilari uchun onlayn platforma: guruhlar, o'qituvchilar, testlar va AI yordamchi.">
+<meta name="theme-color" content="#0a0a1a">
+<meta property="og:title" content="Kollej Neon"><meta property="og:description" content="Kollej uchun onlayn testlar va guruhlar platformasi"><meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎓%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css"></head><body>
+<div id="app"></div><noscript>Saytni ishlatish uchun JavaScript yoqilgan bo'lishi kerak.</noscript>
+<button id="aib" onclick="toggleAI()">🤖</button>
+<div id="aip" class="gl"><b style="color:var(--c2)">AI Yordamchi</b>
+<div id="ml"></div>
+<div class="chips"><button onclick="ask('Savolni o\'qib ber')">📖 O'qi</button><button onclick="ask('Maslahat ber')">💡 Maslahat</button><button onclick="ask('Javobini ayt')">✅ Javob</button><button onclick="ask('Tushuntir')">🧠 Tushuntir</button></div>
+<div class="row" style="flex-wrap:nowrap"><input id="ai-in" placeholder="Savol yozing..." onkeydown="if(event.key==='Enter')ask()"><button onclick="ask()">➤</button></div></div>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="script.js"></script></body></html>

@@ -1,0 +1,45 @@
+:root{color-scheme:dark;--bg:#0a0a1a;--tx:#eef;--mu:#9aa;--c1:#00f0ff;--c2:#ff2bd6;--c3:#9dff00;--gl:rgba(255,255,255,.07);--bd:rgba(255,255,255,.18);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}
+body:before,body:after{content:"";position:fixed;width:60vmax;height:60vmax;border-radius:50%;filter:blur(90px);opacity:.35;z-index:-1}
+body:before{background:var(--c2);top:-20vmax;left:-15vmax}body:after{background:var(--c1);bottom:-25vmax;right:-15vmax}
+#app{max-width:760px;margin:0 auto;padding:16px}
+.gl{background:var(--gl);border:1px solid var(--bd);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:20px;padding:18px;margin:12px 0;box-shadow:0 0 24px rgba(0,240,255,.08)}
+h1,h2,h3{margin:.3em 0}
+.logo{font-size:28px;font-weight:800;text-align:center;color:var(--c1);text-shadow:0 0 12px var(--c1),0 0 30px var(--c2);user-select:none;cursor:pointer}
+input,select{width:100%;padding:12px;margin:6px 0;border-radius:12px;border:1px solid var(--bd);background:rgba(0,0,0,.35);color:var(--tx);font-size:16px;outline:none}
+input:focus,select:focus{border-color:var(--c1);box-shadow:0 0 10px var(--c1)}
+button{cursor:pointer;border:1px solid var(--c1);background:rgba(0,240,255,.1);color:var(--c1);padding:11px 16px;border-radius:12px;font-size:15px;font-weight:600;margin:4px 4px 4px 0;text-shadow:0 0 8px var(--c1);transition:.2s}
+button:hover{background:var(--c1);color:#000;box-shadow:0 0 20px var(--c1)}
+button.p{border-color:var(--c2);color:var(--c2);background:rgba(255,43,214,.1);text-shadow:0 0 8px var(--c2)}
+button.p:hover{background:var(--c2);color:#000;box-shadow:0 0 20px var(--c2)}
+button.sel{background:var(--c3);color:#000;border-color:var(--c3)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(88px,1fr));gap:8px}
+.grid button{margin:0}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.mu{color:var(--mu);font-size:14px}
+.opt{display:block;width:100%;text-align:left;margin:8px 0}
+.teacher{border-color:var(--c3);box-shadow:0 0 18px rgba(157,255,0,.25)}
+.big{font-size:80px;text-align:center}
+.bar{height:10px;background:rgba(255,255,255,.1);border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--c2),var(--c1));box-shadow:0 0 10px var(--c1)}
+#aib{position:fixed;right:14px;top:calc(10px + env(safe-area-inset-top,0px));z-index:5;border-radius:50%;width:50px;height:50px;padding:0;font-size:24px;border-color:var(--c2);color:var(--c2)}
+#aip{position:fixed;right:10px;top:calc(68px + env(safe-area-inset-top,0px));width:min(360px,calc(100vw - 20px));max-height:60vh;display:none;flex-direction:column;z-index:5;margin:0;background:rgba(15,15,35,.85)}
+#aip.on{display:flex}#ml{overflow:auto;flex:1;font-size:14px}
+.m{padding:8px 10px;margin:5px 0;border-radius:12px;white-space:pre-wrap}.m.u{background:rgba(0,240,255,.15);margin-left:30px}.m.a{background:rgba(255,43,214,.15);margin-right:30px}
+.chips button{font-size:12px;padding:6px 9px}
+label.r{display:flex;gap:6px;align-items:center}label.r input{width:auto;margin:0}
+.err{color:#ff6b6b}
+
+.auth{max-width:420px;margin:24px auto}
+.auth .c{text-align:center}.auth h2{text-align:center;font-size:26px;color:var(--c1);text-shadow:0 0 14px var(--c1)}
+.ico{font-size:52px;text-align:center;filter:drop-shadow(0 0 14px var(--c2))}
+.tabs{display:flex;gap:6px;background:rgba(0,0,0,.3);padding:5px;border-radius:14px;margin:12px 0}
+.tabs button{flex:1;margin:0;border-color:transparent;background:none;text-shadow:none;color:var(--mu)}
+.tabs button.sel{background:linear-gradient(90deg,var(--c2),var(--c1));color:#000;border:0}
+label.f{display:flex;align-items:center;gap:8px;padding:0 12px;margin:8px 0;border-radius:14px;border:1px solid var(--bd);background:rgba(0,0,0,.35);transition:.2s}
+label.f:focus-within{border-color:var(--c1);box-shadow:0 0 14px var(--c1)}
+label.f input{border:0;background:none;box-shadow:none;margin:0;padding:14px 0}
+.eye{cursor:pointer;opacity:.7}
+button.w{width:100%;margin:8px 0 0}
+textarea{width:100%;padding:12px;margin:6px 0;border-radius:12px;border:1px solid var(--bd);background:rgba(0,0,0,.35);color:var(--tx);font-size:15px;outline:none;font-family:inherit}textarea:focus{border-color:var(--c1);box-shadow:0 0 10px var(--c1)}
